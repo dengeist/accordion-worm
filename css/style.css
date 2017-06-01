@@ -1,0 +1,29 @@
+[id*=batch] {
+    margin-bottom: .8rem;
+}
+
+.minimalist-accordion__panel[aria-hidden=true] {
+  display: none;
+}
+
+.minimalist-accordion__header {
+  display: block;
+}
+
+/* title opened */
+.minimalist-accordion__header[aria-expanded="true"]:before {
+  content: "- ";
+}
+/* title closed */
+.minimalist-accordion__header[aria-expanded="false"]:before {
+  content: "+ ";
+}
+
+/* title selected */
+.minimalist-accordion__header[aria-selected="true"]:after {
+  content: " (sel)";
+}
+/* title non selected */
+.minimalist-accordion__header[aria-selected="false"]:after {
+  content: " (unselc)";
+}
